@@ -9,6 +9,14 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+body{
+    background-color: #FFF3D9;
+    color: #503629;
+    font-family: sans-serif;
+}
+main h2 {
+    text-align: center;
+}
 
 html {
     color: #222;
@@ -16,24 +24,95 @@ html {
     line-height: 1.4;
 }
 
+.grid-container {
+    display: grid;
+    grid-column-gap:10px;
+    grid-row-gap: 10px;
+}
+.item1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.item2 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.item3 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.item4 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;   
+}
+.item5 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;   
+}
+.item6 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;   
+}
+
+
+
+
+.menu_text {
+    border-bottom: 2px solid #503629;
+    
+}
+.menu_div {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.line {
+    border-bottom: 2px solid #503629;
+}
+.social {
+    float: right;
+    width: 50px;
+    padding: 7px;
+}
+
 .header1{
     background-color: #503629;
-    height: 40px;
-    position: absolute;
+    height: 60px;
+    position: relative;
     z-index: auto;
 }
 .header2{
     background-color: #FFDA00;
     height: 20px;
-    position: absolute;
+    position: relative;
     z-index: auto;
 }
 .header3{
     background-color: #B55200;
     height: 10px;
-    position: absolute;
+    position: relative;
     z-index: auto;
 }
+.logo {
+    padding-top: 27px;
+    padding-left: 100px;
+    z-index: 1000;
+    position: absolute;
+    width: 250px;
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301

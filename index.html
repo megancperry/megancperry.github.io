@@ -12,8 +12,12 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/carousel.css">
+    
 </head>
 
 <body>
@@ -33,7 +37,25 @@
      <div class="header3"></div>
 </header>
     <main>
-        <div class="carousel"> carousel goes here</div>
+         <div class="slideshow-container carousel slide" data-ride="carousel" data-interval="5000">
+                <div class="carousel-inner">
+                    <div class="mySlides fade">
+                        <img src="img/front.jpg" style="width:100%" alt="StoreFront">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="img/coffee.jpg" style="width:100%" alt="Coffee and Donuts">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="img/Doughnuts.JPG" style="width:100%" alt="">
+                    </div>
+                    </div>
+        
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                </div>
         <div class="menu_div">
             <h2> Menu </h2>
             <p class="menu_text"><strong>Bakers Dozen Donuts:</strong> Mix and Match any 13 regular donuts</p>
@@ -41,15 +63,13 @@
             <p class="menu_text"><strong>Fancy Donut:</strong> Bow tie, éclair, apple turnover, fancy coffee roll. </p>
             <p class="menu_text"><strong>French Cruller</strong></p>
             <p><strong>Top Sellers:</strong></p>
-            <div>
-                <div class="menu_left">Pistachio Pinwheels</div>
-                <div class="menu_center">Boston Cream Delights</div>
-                <div calss="menu_right">Chocolate Confetti </div>
-            </div> 
-            <div>
-                <div class="menu_left">Marshmellow Mayhem</div>
-                <div class="menu_center">French Twists</div>
-                <div >Bull Horns</div>
+            <div class="grid-container">
+                <div class="item1">Pistachio Pinwheels<img src="img/pistachio-pinwheels.jpg"</div>
+                <div class="item2">Boston Cream Delights</div>
+                <div calss="item3">Chocolate Confetti </div>
+                <div class="item4">Marshmellow Mayhem</div>
+                <div class="item5">French Twists</div>
+                <div class="item6">Bull Horns</div>
             </div>
         </div>
     <div class="line"></div>
@@ -59,7 +79,8 @@
     <div class="line"></div>
     <div>
         <h2>About Us</h2>
-        <p>Donut Delights was started in 1971 by Melvin Furballski, an immigrant baker from the far east coast of Poland. Known far and wide for his delicate pastries, Melvin fled his homeland in search of a better life for his family. In 1970 he landed in New York City and by chance he found an open seat on a bus heading west. When an unexpected mechanical failure forced a three day delay in Champaign, Illinois, Furballski saw the need for a donut shop, so he decided to stay and make a new life for himself in Urbana, Illinois. 			With only one hundred dollars to his name, he found an abandoned breadshop and within two days he had one of a kind donuts flying off the racks faster than he could bake them and things have never slowed down. Now you can find that same great donut recipe plus dozens more still being made with the same love and care as when Donut Delights first opened.</p>
+        <p>Donut Delights was started in 1971 by Melvin Furballski, an immigrant baker from the far east coast of Poland. Known far and wide for his delicate pastries, Melvin fled his homeland in search of a better life for his family. In 1970 he landed in New York City and by chance he found an open seat on a bus heading west. When an unexpected mechanical failure forced a three day delay in Champaign, Illinois, Furballski saw the need for a donut shop, so he decided to stay and make a new life for himself in Urbana, Illinois. 			
+        With only one hundred dollars to his name, he found an abandoned breadshop and within two days he had one of a kind donuts flying off the racks faster than he could bake them and things have never slowed down. Now you can find that same great donut recipe plus dozens more still being made with the same love and care as when Donut Delights first opened.</p>
     </div>
     <div class="line"></div>
     <div>
@@ -68,9 +89,13 @@
     </main>
   <script src="js/vendor/modernizr-3.6.0.min.js">Donut Delights was started in 1971 by Melvin Furballski, an immigrant baker from the far east coast of Poland. Known far and wide for his delicate pastries, Melvin fled his homeland in search of a better life for his family. In 1970 he landed in New York City and by chance he found an open seat on a bus heading west. When an unexpected mechanical failure forced a three day delay in Champaign, Illinois, Furballski saw the need for a donut shop, so he decided to stay and make a new life for himself in Urbana, Illinois. 			With only one hundred dollars to his name, he found an abandoned breadshop and within two days he had one of a kind donuts flying off the racks faster than he could bake them and things have never slowed down. Now you can find that same great donut recipe plus dozens more still being made with the same love and care as when Donut Delights first opened.</script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script>window.jQuery || document.write(' 
+  <script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/Carousel2.js"></script>
+    
+    </script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
