@@ -23,6 +23,49 @@ html {
     font-size: 1em;
     line-height: 1.4;
 }
+iframe {
+    margin-left: 20%;
+}
+.gif{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    float: left;
+    padding-left: 6px
+}
+.form {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.content {
+    padding-left: 10%;
+}
+.contact {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    padding: 20px;
+}
+.map {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 20px;
+    
+}
+form {
+    float: right;
+    background-color:  #B55200;
+    border: 15px  #B55200 solid;
+    margin-top: 20px;
+    margin-right: 80px;
+    width: 80%;
+    text-align: center;
+    color: #FFF3D9;
+}
+.about-us{ 
+    text-indent: 50px;
+    width: 75%;
+    margin-left: 50px;
+    
+}
 
 .grid-container {
     display: grid;
@@ -67,9 +110,6 @@ html {
     grid-column-end: 4;   
 }
 
-
-
-
 .menu_text {
     border-bottom: 2px solid #503629;
     
@@ -77,6 +117,7 @@ html {
 .menu_div {
     padding-left: 50px;
     padding-right: 50px;
+    padding-bottom: 10px;
 }
 .line {
     border-bottom: 2px solid #503629;
@@ -111,6 +152,9 @@ html {
     z-index: 1000;
     position: absolute;
     width: 250px;
+}
+#menu-img {
+    padding-left: 7px;
 }
 
 /*
